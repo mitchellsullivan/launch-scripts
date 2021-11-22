@@ -27,7 +27,9 @@ sudo apt install nginx apache2-utils -y
 sudo snap install core; sudo snap refresh core
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot --nginx
+
+# run certbot
+# sudo certbot --nginx
 
 # sudo vim /etc/nginx/sites-available/default
 # sudo vim /etc/nginx/nginx.conf
