@@ -1,8 +1,11 @@
-sudo apt update
+# Installs nginx with certbot directly on machine and docker. 
+# Used to reverse proxy to docker containers, all on one machine.
 
 # install requirements for docker
+sudo apt update
 sudo apt-get install ca-certificates curl gnupg lsb-release -y
 
+# add official docker keys
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
   sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
