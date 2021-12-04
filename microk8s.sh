@@ -12,4 +12,6 @@ until microk8s.status ; do sleep 1 ; done
 mkdir ~/.kube
 microk8s config > ~/.kube/config
 
-sudo microk8s.enable dashboard registry:size=5Gi storage dns ingress helm3 host-access 
+sudo microk8s.enable dashboard storage dns ingress helm3 host-access \
+# registry:size=20Gi 
+;
